@@ -1,0 +1,204 @@
+$module: comments
+
+.#{$module}
+  position: relative
+  padding-bottom: 70px
+  border-top: 2px solid #D6D6D6
+  background-color: #F2F2F2
+
+.#{$module}__title
+  margin-top: 75px
+  margin-bottom: 80px
+  font-size: 32px
+  text-align: center
+  font-family: $font-family-second
+
+.#{$module}__login
+  position: absolute
+  right: 80px
+  padding-right: 30px
+  padding-top: 20px
+  cursor: pointer
+  @media only screen and (max-width: 767px)
+    top: 20px
+  @media only screen and (min-width: 768px)
+    top: 75px
+  &:after
+    content: ' '
+    position: absolute
+    right: 0
+    top: 0
+    width: 24px
+    height: 23px
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-image: url(images/comments_login.svg)
+
+.#{$module}__list
+  width: 95%
+  max-width: 720px
+  margin: 0 auto
+
+$cm--avatar-size: 90px
+$cm--inner-avatar-size: 64px
+$cm--submit-width: 180px
+
+$cm--avatar-size--mobile: 40px
+
+$module: cm
+
+.#{$module}
+  &__vk
+    @extend .icon_vk
+    background-image: url(images/vk_gray.svg)
+  &__fb
+    @extend .icon_fb
+  &__tw
+    @extend .icon_tw
+
+  &__item
+    position: relative
+    margin-bottom: 40px
+    min-height: 140px
+    @media only screen and (max-width: 767px)
+      padding-left: $cm--avatar-size--mobile + 10px
+    @media only screen and (min-width: 768px)
+      padding-left: 160px
+  &__item_inner
+    position: relative
+    margin-bottom: 40px
+    min-height: 140px
+    margin-top: 10px
+    @media only screen and (max-width: 767px)
+      padding-left: $cm--avatar-size--mobile + 10px
+    @media only screen and (min-width: 768px)
+      padding-left: 170px
+  &__form,
+  &__form_inner
+    position: relative
+    min-height: 140px
+    @media only screen and (max-width: 767px)
+      padding-left: $cm--avatar-size--mobile + 10px
+    @media only screen and (min-width: 768px)
+      padding-left: 160px
+
+  &__logo
+    position: absolute
+    @media only screen and (max-width: 767px)
+      left: 0
+      top: 0
+      width: $cm--avatar-size--mobile
+      height: $cm--avatar-size--mobile
+      +border-radius($cm--avatar-size--mobile/2)
+    @media only screen and (min-width: 768px)
+      left: 35px
+      top: 5px
+      width: $cm--avatar-size
+      height: $cm--avatar-size
+      +border-radius($cm--avatar-size/2)
+  &__logo_inner
+    position: absolute
+    @media only screen and (max-width: 767px)
+      left: 0
+      top: 0
+      width: $cm--avatar-size--mobile
+      height: $cm--avatar-size--mobile
+      +border-radius($cm--avatar-size--mobile/2)
+    @media only screen and (min-width: 768px)
+      left: 80px
+      top: 5px
+      width: $cm--inner-avatar-size
+      height: $cm--inner-avatar-size
+      +border-radius($cm--inner-avatar-size/2)
+
+  &__info,
+  &__info_inner
+    position: absolute
+    z-index: 1
+    font-size: 16px
+    font-weight: 500
+  &__info
+    @media only screen and (max-width: 767px)
+      left: $cm--avatar-size--mobile + 25px
+      top: 5px
+    @media only screen and (min-width: 768px)
+      left: $cm--avatar-size + 85px
+      top: 5px
+  &__info_inner
+    @media only screen and (max-width: 767px)
+      left: $cm--avatar-size--mobile + 25px
+      top: 5px
+    @media only screen and (min-width: 768px)
+      left: $cm--avatar-size + 95px
+      top: 5px
+
+  &__body,
+  &__body_inner
+    position: relative
+    padding-bottom: 40px
+
+  &__body
+    input[type="submit"]
+      position: absolute
+      +border-radius(6px)
+      border: 1px solid #A2A2A2
+      background-color: transparent
+      @media only screen and (max-width: 767px)
+        right: 5px
+        bottom: 5px
+      @media only screen and (min-width: 768px)
+        right: 0
+        top: 0
+        width: $cm--submit-width
+        height: 130px
+
+  &__body_inner
+    input[type="submit"]
+      position: absolute
+      +border-radius(6px)
+      border: 1px solid #A2A2A2
+      background-color: transparent
+      right: 5px
+      bottom: 5px
+
+  &__content,
+  &__content_inner
+    +box-shadow(0 0 4px rgba(0,0,0,0.5))
+    background-color: #FFF
+    +border-radius(6px)
+  &__content
+    min-height: 130px
+    padding: 23px 40px
+    font-size: 26px
+  &__content_inner
+    min-height: 90px
+    padding: 25px 40px
+    font-size: 20px
+
+  &__area,
+  &__area_inner
+    +border-radius(6px)
+    border: 1px solid #A2A2A2
+    resize: none
+    min-height: 130px
+    max-width: 100%
+    padding: 23px 40px
+    font-size: 26px
+    background-color: #ccc
+  &__area
+    width: 375px
+  &__area_inner
+    width: 100%
+
+  &__time
+    position: absolute
+    left: 40px
+    bottom: 7px
+    font-size: 12px
+    color: #444
+
+  &__answer
+    color: $text-color
+    position: absolute
+    right: 30px
+    bottom: 55px

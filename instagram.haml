@@ -1,0 +1,195 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+.content-main{ :role => "content" }
+  %section.instagram
+    %h1.instagram__title Конкурс инстаграм
+    %img.instagram__image{ :src => "assets/pic/pic59.png" }
+    .instagram__counters
+      .instagram__views 222
+      .instagram__comments 222
+      .instagram__likes 222
+    %p Как вы знаете, на днях был открыт аккаунт Fashiony в инстаграм (@fashionyru). Пока что в нем представлено немного «инсайдерских» фото от редакции и лучшие картинки с сайта. Безусловно, эта страничка не будет полн ой без вашего творчества. Итак, предлагаю приступить к ее наполнению вместе!
+    %p.instagram__subtitle Тема 
+    %p Для первого конкурса не будет задана специальная тема, пусть это будет все, что касается моды, стиля и, собственно, instagram. Пожалуй, главный критерий – эстетическая составляющая, пусть это будут красивые фото. Ваши вещи, образы, обеды, мероприятия и многое другое, соответствующее традиционной тематике инстаграма.
+    %p.instagram__subtitle Правила участия
+    %ol
+      %li Размещаем ОБЯЗАТЕЛЬНО НОВОЕ подходящее фото на своей страничке в instagram, используем в описании к нему хэштег #fashionyru.
+      %li Дублируем фото в здешние комментарии, обязательно указываем ссылку на него в своем аккаунте.
+      %li Количество фоторабот – не ограничено!
+      %li Безусловно, работы должны быть авторскими, запрещено выкладывать чужие фото, подобные участники будут исключены из конкурса.
+  .im-photoes
+    .im-photoes__nav
+      %form.im-photoes__find
+        %p.im-photoes__caption Найти себя
+        %input.im-photoes__find__text{ :value => "ник инстаграм" }
+        %input.im-photoes__find__submit{ :type => "submit", :value => "" }
+      .im-photoes__sort
+        %p.im-photoes__caption Сортировать
+        %a.active{ :href => "javascript:;" } по популярности
+        %a{ :href => "javascript:;" } по новизне
+    .im-photoes__list
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic46.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes.liked 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic47.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes.liked 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic48.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic49.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic50.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes.liked 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic51.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic52.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic53.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic54.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic55.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic56.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+      .im-photoes__item
+        %a{ :href => "instagram_inner.html" }
+          %img.im-photoes__image{ :src => "assets/pic/pic57.png" }
+        .im-photoes__info
+          Masha-masha
+          .im-photoes__likes 222
+
+  %section.share-block
+    %h1.share-block__title Рассказать друзьям
+    .share-block__buttons
+      / кнопки сюда
+      .share-block__item
+      .share-block__item
+      .share-block__item
+    %hr
+
+  %section.recommend
+    %h1.recommend__title Возможно вам понравится
+    .recommend__cont
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic17.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Скидки
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic18.png" }
+          .recommend__item__tag{ "data-type" => "new" } Новый
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic19.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Статья
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic20.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Конкурс
+          .recommend__item__text Весенний макияж
+    .recommend__load{ :role => "recommend-load" }
+      загрузить еще
+
+  .comments
+    .comments__title Комментарии
+    .comments__login Прокомментировать
+    .comments__list
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic21.png" }
+        .cm__info
+          %span.cm__vk
+          Маша
+        .cm__body
+          .cm__content
+            Восхитительно!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic22.png" }
+        .cm__info
+          %span.cm__vk
+          Слава
+        .cm__body
+          .cm__content
+            Нереально!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+        .cm__item_inner
+          %img.cm__logo_inner{ :src => "assets/pic/pic23.png" }
+          .cm__info_inner
+            %span.cm__vk
+            Андрей
+          .cm__body_inner
+            .cm__content_inner
+              +1
+            .cm__time Сегодня, в 18:37
+            %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__form
+        %img.cm__logo{ :src => "assets/pic/pic24.png" }
+        .cm__info
+          %span.cm__vk
+          Слава
+        .cm__body
+          %textarea.cm__area
+            Грандиозно!
+          %input{ :type => "submit", :value => "Комментировать" }

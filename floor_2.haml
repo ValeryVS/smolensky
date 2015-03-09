@@ -1,0 +1,164 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+/ first screen
+.screen_first{ :role => "screen" }
+  / %img.screen_first__bg-image{ :role => "screen-bg-image", :src => "assets/pic/pic12.png" }
+  .screen_first__images{ :role => "screen-first-slider" }
+    / slider images here
+    %img{ :src => "assets/pic/pic12.png" }
+    %img{ :src => "assets/pic/pic14.png" }
+  .screen_first__title Новые коллекции<br> в BOSCO UOMO
+  .screen_first__counters
+    .screen_first__views 222
+    .screen_first__comments 222
+    .screen_first__likes 222
+  .screen_first__select
+    %a.screen_first__select-top{ :href => "floor_3.html" }
+    .screen_first__select-number 2
+    .screen_first__select-text этаж
+    %a.screen_first__select-bottom{ :href => "floor_1.html" }
+
+.content-main{ :role => "content" }
+  .sale{ :role => 'sale' }
+    %img.sale__img{ :src => "assets/pic/pic13.png" }
+    .sale__info
+      .sale__info__text-sale Скидки до 20%
+      .sale__info__title Diane von Furstenberg
+      .sale__info__counters
+        .sale__info__views 222
+        .sale__info__comments 222
+        .sale__info__likes 222
+  / bricks
+  .brick__container.move{ :role => 'masonry' }
+    .brick.brick-move{ "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic5.png" }
+    %a.brick{ :href => "brand.html", "data-width" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic27.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-height" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic28.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic29.png" }
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic30.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic31.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic32.png" }
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic33.png" }
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic2.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+
+  / floor plan block
+  .floor-plan
+    %h1.floor-plan__title План этажа
+    .floor-plan__image
+      / svg insert here
+      %img{ :role => "svg-convert", :src => "assets/pic/plan2.svg" }
+
+    .floor-plan__nav
+      %p.floor-plan__section ОДЕЖДА
+      %nav.floor-plan__list
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C01" }
+          %span.floor-plan__number C01
+          Bosco Family
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C02" }
+          %span.floor-plan__number C02
+          Baldessarini
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C03" }
+          %span.floor-plan__number C03
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C04" }
+          %span.floor-plan__number C04
+          Agent Provocateur
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C05" }
+          %span.floor-plan__number C05
+          Кашемир и шелк
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C08" }
+          %span.floor-plan__number C08
+          Ducal's
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C09" }
+          %span.floor-plan__number C09
+          Les Copains
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C10" }
+          %span.floor-plan__number C10
+          Dirk Bikkembergs
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C11" }
+          %span.floor-plan__number C11
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C12" }
+          %span.floor-plan__number C12
+          Bosco
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C13" }
+          %span.floor-plan__number C13
+          Missoni
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C14" }
+          %span.floor-plan__number C14
+          ESCADA SPORT
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C15" }
+          %span.floor-plan__number C15
+          МНиБ
+      %p.floor-plan__section РЕСТОРАНЫ И КАФЕ
+      %nav.floor-plan__list
+        %a{ :href => "#", :role => "plan-link", "data-num" => "R01" }
+          %span.floor-plan__number R01
+          ZODIAC
+        %a{ :href => "#", :role => "plan-link", "data-num" => "R02" }
+          %span.floor-plan__number R02
+        %a{ :href => "#", :role => "plan-link", "data-num" => "C07" }
+          %span.floor-plan__number C07
+          Luciano
+      / popup text containers
+      .floor-plan__info{ :role => "plan-info", "data-num" => "C01" }
+        bla bla bla, wait for design
+      .floor-plan__info{ :role => "plan-info", "data-num" => "C02" }
+        bla bla bla, wait for design
+      .floor-plan__info{ :role => "plan-info", "data-num" => "C03" }
+        bla bla bla, wait for design

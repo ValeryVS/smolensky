@@ -1,0 +1,26 @@
+%footer.footer-main{ :role => "footer" }
+  %a.footer-main__top-link{ :href => "#" }
+  .footer-main__copy
+    {{ site.title }}<br>
+    &copy; 2014
+  %nav.footer-main__menu
+    %a{ :href => "#" } Магазины
+    %a{ :href => "#" } Блоги
+    %a{ :href => "#" } Конкурсы
+    %a{ :href => "#" } О нас
+    %a{ :href => "#" } Аренда и реклама
+    %a{ :href => "#" } Контакты
+  .footer-main__floor-selector
+    .floor-selector__text
+      Этаж:
+    .floor-selector__cont
+      .floor-selector__current 3
+      .floor-selector__links
+        %a{ :href => "floor_minus1.html" } 0
+        %a{ :href => "floor_1.html" } 1
+        %a{ :href => "floor_2.html" } 2
+        %a{ :href => "floor_3.html" } 3
+        %a{ :href => "floor_4.html" } 4
+  .footer-main__creator
+    Создание сайта
+    %a{ :href => "javascript:;" } Медиасфера

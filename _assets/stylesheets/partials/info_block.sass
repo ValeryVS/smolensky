@@ -1,0 +1,79 @@
+$module: info
+
+%#{$module}__counter
+  position: relative
+  display: inline-block
+  padding-left: 30px
+  margin-right: 5px
+  font-family: $font-family-second
+  &:after
+    content: ' '
+    position: absolute
+    left: 0
+    top: 0
+    background-position: 0 0
+    background-repeat: no-repeat
+
+%#{$module}__views
+  @extend %#{$module}__counter
+  &:after
+    width: 26px
+    height: 26px
+    background-size: 26px auto
+
+%#{$module}__views_dark
+  @extend %#{$module}__views
+  &:after
+    background-image: url(images/views_dark.svg)
+
+%#{$module}__views_bright
+  @extend %#{$module}__views
+  &:after
+    background-image: url(images/views_bright.svg)
+
+%#{$module}__comments
+  @extend %#{$module}__counter
+  &:after
+    width: 24px
+    height: 24px
+    background-size: 24px auto
+
+%#{$module}__comments_dark
+  @extend %#{$module}__comments
+  &:after
+    background-image: url(images/comments_dark.svg)
+
+%#{$module}__comments_bright
+  @extend %#{$module}__comments
+  &:after
+    background-image: url(images/comments_bright.svg)
+
+%#{$module}__likes
+  @extend %#{$module}__counter
+  &:after
+    width: 26px
+    height: 26px
+    background-size: 26px auto
+
+%#{$module}__likes_dark
+  @extend %#{$module}__likes
+  &:after
+    background-image: url(images/like_dark.svg)
+  &.liked:after
+    background-image: url(images/like_liked_dark.svg)
+
+%#{$module}__likes_bright
+  @extend %#{$module}__likes
+  &:after
+    background-image: url(images/like_bright.svg)
+  &.liked:after
+    background-image: url(images/like_liked_bright.svg)
+
+.#{$module}__views_dark
+  @extend %info__views_dark
+
+.#{$module}__comments_dark
+  @extend %info__comments_dark
+
+.#{$module}__likes_dark
+  @extend %info__likes_dark

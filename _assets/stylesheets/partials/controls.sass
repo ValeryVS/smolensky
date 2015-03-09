@@ -1,0 +1,28 @@
+.form-title
+  font-size: 18px
+
+.smolensky-form-control-primary
+  @extend .form-control
+  display: inline-block
+  width: auto
+  border: 1px solid #000
+  border-radius: 0
+
+.smolensky-form-control-search
+  @extend .btn
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-color: #FFF
+  background-image: url(images/loupe.svg)
+
+.smolensky-btn-prymary
+  @extend .btn
+  display: inline-block
+  padding: 5px 10px
+  border: 1px solid transparent
+  border-radius: 0
+  color: #777
+  &.active,
+  &:hover
+    color: #000
+    border-color: #000

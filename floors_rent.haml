@@ -1,0 +1,58 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+.content-main{ :role => "content" }
+  .floor-page
+    .floor-page__button-block
+      %a.floor-page__button.active{ :href => "floors_rent.html" } Аренда
+      %a.floor-page__button{ :href => "floors_reclam.html" } Реклама
+    / floor plan block
+    .floor-page__plan
+      .floor-page__switcher
+        %a.floor-switcher__select-top{ :href => "floor_3.html" }
+        .floor-switcher__select-number 2
+        .floor-switcher__select-text этаж
+        %a.floor-switcher__select-bottom{ :href => "floor_1.html" }
+
+      .floor-page__image
+        / svg insert here
+        %img{ :role => "svg-convert", :src => "assets/pic/plan2.svg" }
+
+      .floor-page__nav
+        %form.floor-page__contect-form
+          .floor-page__form-title Заявка на аренду
+          .form-group
+            %label
+              Название организации
+              %input.form-control
+          .form-group
+            %label
+              Контактное лицо
+              %input.form-control
+          .form-group
+            %label
+              Телефон или e-mail
+              %input.form-control
+          .form-group
+            %label
+              Интересующая площадь м<sup>2</sup>
+              %input.form-control
+          .form-group
+            %label
+              Этаж
+              %input.form-control
+          .form-group
+            %input.floor-page__submit{ :type => "submit" }

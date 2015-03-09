@@ -1,0 +1,93 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+.content-main{ :role => "content" }
+  .floor-page
+    %h1.floor-page__title Список магазинов
+    / floor plan block
+    .floor-page__plan
+      .floor-page__switcher
+        %a.floor-switcher__select-top{ :href => "floor_3.html" }
+        .floor-switcher__select-number 2
+        .floor-switcher__select-text этаж
+        %a.floor-switcher__select-bottom{ :href => "floor_1.html" }
+
+      .floor-page__image
+        / svg insert here
+        %img{ :role => "svg-convert", :src => "assets/pic/plan2.svg" }
+
+      .floor-page__nav
+        %form
+          .form-group
+            %p.form-title Найти себя
+            %input.smolensky-form-control-primary{ :value => "ник инстаграм" }
+            %input.smolensky-form-control-search{ :type => "submit", :value => "" }
+        %p.floor-plan__section ОДЕЖДА
+        %nav.floor-plan__list
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C01" }
+            %span.floor-plan__number C01
+            Bosco Family
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C02" }
+            %span.floor-plan__number C02
+            Baldessarini
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C03" }
+            %span.floor-plan__number C03
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C04" }
+            %span.floor-plan__number C04
+            Agent Provocateur
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C05" }
+            %span.floor-plan__number C05
+            Кашемир и шелк
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C08" }
+            %span.floor-plan__number C08
+            Ducal's
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C09" }
+            %span.floor-plan__number C09
+            Les Copains
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C10" }
+            %span.floor-plan__number C10
+            Dirk Bikkembergs
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C11" }
+            %span.floor-plan__number C11
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C12" }
+            %span.floor-plan__number C12
+            Bosco
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C13" }
+            %span.floor-plan__number C13
+            Missoni
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C14" }
+            %span.floor-plan__number C14
+            ESCADA SPORT
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C15" }
+            %span.floor-plan__number C15
+            МНиБ
+        %p.floor-plan__section РЕСТОРАНЫ И КАФЕ
+        %nav.floor-plan__list
+          %a{ :href => "#", :role => "plan-link", "data-num" => "R01" }
+            %span.floor-plan__number R01
+            ZODIAC
+          %a{ :href => "#", :role => "plan-link", "data-num" => "R02" }
+            %span.floor-plan__number R02
+          %a{ :href => "#", :role => "plan-link", "data-num" => "C07" }
+            %span.floor-plan__number C07
+            Luciano
+        / popup text containers
+        .floor-plan__info{ :role => "plan-info", "data-num" => "C01" }
+          bla bla bla, wait for design
+        .floor-plan__info{ :role => "plan-info", "data-num" => "C02" }
+          bla bla bla, wait for design
+        .floor-plan__info{ :role => "plan-info", "data-num" => "C03" }
+          bla bla bla, wait for design

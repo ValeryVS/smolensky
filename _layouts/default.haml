@@ -1,0 +1,44 @@
+---
+---
+
+!!! 5
+%html
+  %head
+    %meta{ :charset => 'utf-8' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
+    %title {% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}
+    {% if page.description %}
+    %meta{ :name => 'description', :content => '{{ page.description }}' }
+    {% endif %}
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
+    %meta{ :property => 'og:title', :content => '{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}' }
+    %meta{ :property => 'og:description', :content => '{{ page.description }}' }
+    {% stylesheet app %}
+    {% javascript modernizr %}
+  %body
+    .page{ :role => "page" }
+      {% include_haml menu.haml %}
+      {{ content }}
+      {% include_haml footer.haml %}
+      .login-window{ :role => "login-window" }
+        .login-window__title Войти через соцсети
+        .login-window__list
+          .login-window__item
+            %a.login-window__vk{ :href => "#" } Вконтакте
+          .login-window__item
+            %a.login-window__fb{ :href => "#" } Facebook
+          .login-window__item
+            %a.login-window__ok{ :href => "#" } Одноклассники
+          .login-window__item
+            %a.login-window__tw{ :href => "#" } Twitter
+          .login-window__item
+            %a.login-window__in{ :href => "#" } Instagram
+          .login-window__item
+            %a.login-window__gplus{ :href => "#" } Google
+          .login-window__item
+            %a.login-window__ya{ :href => "#" } Яндекс
+          .login-window__item
+            %a.login-window__mailru{ :href => "#" } Mail.ru
+        .login-window__close{ :role => "login-close" }
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    {% javascript app %}

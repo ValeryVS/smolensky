@@ -1,0 +1,101 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+/ first screen
+.screen_first{ :role => "screen" }
+  %img.screen_first__bg-image{ :role => "screen-bg-image", :src => "assets/pic/pic43.png" }
+  .screen_first__title_4 World Class:<br> характер имеет значение
+  .screen_first__counters_4
+    .screen_first__views 222
+    .screen_first__comments 222
+    .screen_first__likes 222
+  .screen_first__select
+    .screen_first__select-number 4
+    .screen_first__select-text этаж
+    %a.screen_first__select-bottom{ :href => "floor_3.html" }
+
+.content-main{ :role => "content" }
+  / bricks
+  .brick__container{ :role => 'masonry' }
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic44.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic33.png" }
+    %a.brick{ :href => "brand.html", "data-height" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic28.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic45.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic32.png" }
+
+  / floor plan block
+  .floor-plan
+    %h1.floor-plan__title План этажа
+    .floor-plan__image
+      / svg insert here
+      %img{ :role => "svg-convert", :src => "assets/pic/plan4.svg" }
+
+    .floor-plan__nav
+      %p.floor-plan__section МАГАЗИНЫ И УСЛУГИ
+      %nav.floor-plan__list
+        %a{ :href => "#", :role => "plan-link", "data-num" => "F01" }
+          %span.floor-plan__number F01
+          Galladance
+        %a{ :href => "#", :role => "plan-link", "data-num" => "F02" }
+          %span.floor-plan__number F02
+          Grishko
+        %a{ :href => "#", :role => "plan-link", "data-num" => "F03" }
+          %span.floor-plan__number F03
+          Barber Z
+        %a{ :href => "#", :role => "plan-link", "data-num" => "F04" }
+          %span.floor-plan__number F04
+          Coral Travel
+        %a{ :href => "#", :role => "plan-link", "data-num" => "F05" }
+          %span.floor-plan__number F05
+          World Class
+      %p.floor-plan__section РЕСТОРАНЫ И КАФЕ
+      %nav.floor-plan__list
+        %a{ :href => "#", :role => "plan-link", "data-num" => "R05" }
+          %span.floor-plan__number R05
+          Урбан кафе
+      / popup text containers
+      .floor-plan__info{ :role => "plan-info", "data-num" => "F01" }
+        bla bla bla, wait for design
+      .floor-plan__info{ :role => "plan-info", "data-num" => "F02" }
+        bla bla bla, wait for design
+      .floor-plan__info{ :role => "plan-info", "data-num" => "F03" }
+        bla bla bla, wait for design

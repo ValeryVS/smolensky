@@ -1,0 +1,59 @@
+$module: floor-plan
+
+.#{$module}
+  padding-top: 40px
+  padding-bottom: 40px
+  background-color: #FFF
+  &:after
+    content: ' '
+    display: table
+    clear: both
+
+.#{$module}__title
+  font-size: 32px
+  margin-bottom: 45px
+  text-align: center
+
+.#{$module}__image
+  text-align: center
+  img,
+  svg
+    max-width: 100%
+  @media only screen and (max-width: 767px)
+    margin-left: 10px
+    margin-right: 10px
+    margin-bottom: 10px
+  @media only screen and (min-width: 768px)
+    float: left
+    width: 50%
+
+.#{$module}__nav
+  @media only screen and (max-width: 767px)
+    max-width: 90%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  @media only screen and (min-width: 768px)
+    float: left
+    width: 50%
+
+.#{$module}__section
+  font-size: 20px
+  margin-bottom: 17px
+
+.#{$module}__list
+  text-align: left
+  margin-bottom: 24px
+  a
+    display: block
+    color: $text-color
+    &:hover,
+    &.hover
+      text-decoration: underline
+
+.#{$module}__number
+  display: inline-block
+  width: 40px
+
+.#{$module}__info
+  display: none

@@ -1,0 +1,137 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+/ first screen
+%a.screen_blog{ :role => "screen", :href => "blog.html" }
+  .screen_blog__left
+    .screen_blog__content
+      .screen_blog__info
+        %img.screen_blog__avatar{ :src => "assets/pic/pic24.png" }
+        .screen_blog__name Елена Крыгина
+      .screen_blog__tag{ "data-type" => "article" } Статья
+      .screen_blog__title Как ночить черное этим летом
+      .screen_blog__subtitle Главные правила для верных поклонников total-black
+      .screen_blog__counters
+        .info__views_dark 222
+        .info__comments_dark 222
+        .info__likes_dark 222
+  .screen_blog__right
+    %img.screen_blog__bg-image{ :role => "block-bg-image", :src => "assets/pic/blogs/pic1.png" }
+
+.content-main{ :role => "content" }
+  / bricks
+  .brick__container{ :role => 'masonry' }
+    %a.brick{ :href => "blog.html", "data-width" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic35.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic36.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "look" } Лук
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic37.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "look" } Лук
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic38.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-height" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic28.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "look" } Лук
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic39.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic32.png" }
+    %a.brick{ :href => "blog.html", "data-width" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic40.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic41.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "blog.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic42.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        %img.brick__info__avatar{ :src => "assets/pic/pic21.png" }
+        .brick__info__name Рита Галкина
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222

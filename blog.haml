@@ -1,0 +1,152 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+.content-main{ :role => "content" }
+
+  %section.blog
+    .blog-head
+      .blog-head__type Ревизия
+      %h1.blog-head__title Платья-рубашки
+      .blog-head__info__counters
+        .blog-head__info__views 222
+        .blog-head__info__comments 222
+        .blog-head__info__likes 222
+      .blog-head__author
+        .blog-head__author__text Автор статьи
+        %img.blog-head__author__img{ :src => "assets/pic/pic24.png" }
+        .blog-head__author__name Екатерина Троицкая
+        / .icon_tw .icon_vk .icon_fb
+        .blog-head__author__social.icon_tw
+
+    .image_left_caption-center
+      %img{ :src => "assets/pic/pic25.png" }
+      %p.caption Рубашка – одежда для верхней части тела, может быть на пуговицах и без, с короткими либо длинными рукавами.
+    %p.font-xlarge Предмет одежды, без которого не может себя представить ни один городской модник, появился еще на закате Римской империи – когда трендсеттеры той эпохи решили сменить хитоныс туниками на нечто более мужественное.
+    .image_left
+      %img{ :src => "assets/pic/pic26.png" }
+    %p После этого, в условиях христианской Европы, правила приличия требовали ношения на себе большого количества слоев одежды, и вплоть до XX столетия рубашка оставалась нижним бельем. В Средние века ее можно было увидеть только на  простых, не ведающих приличий людях – пастухах, заключенных или кающихся грешниках с живописных произведений.
+    %p На рубашки начали пришивать кружева и оборки, но это не вывело их в разряд одежды, которую можно демонстрировать на публике, зато они стали такими длинными, что заменяли тогдашним людям трусы. Цветные рубашки появились в начале XIX века, но настоящие джентльмены себе такого сумасбродства не позволяли и облачились в них примерно через лет сто, а уж к концу XX столетия такая рубашка стала просто обязательным предметом в гардеробе.
+    %h1 Факты о рубашках:
+    %table.text-table
+      %tr
+        %td{ :style => "width:300px" }
+          Женщины начали носить рубашки в 1860 году, когда законодательница мод императрица Евгения, стала появляться в свете в рубашке "под Гарибальди": известный борец за свободу Италии славился сорочкой красного цвета.
+        %td
+          В нынешние времена рубашка часто помогает определить принадлежность к социальной группе: по сорочке, надеваемой под костюм, можно узнать менеджера, по клетчатой рубашке или рубашке-поло – не чуждого моде городского интеллектуала, по расстегнутой до середины груди – пришедшего на официальное мероприятие популярного певца.
+
+  %section.share-block
+    .share-block__title
+      %h1 Рассказать друзьям
+    .share-block__buttons
+      / кнопки сюда
+    %hr
+
+  %section.recommend
+    %h1.recommend__title Возможно вам понравится
+    .recommend__cont
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic17.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Скидки
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic18.png" }
+          .recommend__item__tag{ "data-type" => "new" } Новый
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic19.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Статья
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic20.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Конкурс
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic17.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Скидки
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic18.png" }
+          .recommend__item__tag{ "data-type" => "new" } Новый
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic19.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Статья
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic20.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Конкурс
+          .recommend__item__text Весенний макияж
+    .recommend__load.loading{ :role => "recommend-load" }
+      загрузить еще
+
+  .comments
+    .comments__title Комментарии
+    .comments__login{ :role => "login" } Прокомментировать
+    .comments__list
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic21.png" }
+        .cm__info
+          %span.cm__vk
+          Маша
+        .cm__body
+          .cm__content
+            Восхитительно!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+        <form class="cm__form_inner comments_form">
+        <img class="cm__logo" src="assets/pic/pic22.png"><div class="cm__info">
+        <span class="cm__vk"></span>Слава</div>
+        <div class="cm__body_inner">
+        <textarea class="cm__area_inner" name="comment" placeholder="Комментарий"></textarea><input type="submit" value="Комментировать">
+        </div>
+        </form>
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic22.png" }
+        .cm__info
+          %span.cm__fb
+          Слава
+        .cm__body
+          .cm__content
+            Нереально!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+        .cm__item_inner
+          %img.cm__logo_inner{ :src => "assets/pic/pic23.png" }
+          .cm__info_inner
+            %span.cm__tw
+            Андрей
+          .cm__body_inner
+            .cm__content_inner
+              +1
+            .cm__time Сегодня, в 18:37
+            %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__form
+        %img.cm__logo{ :src => "assets/pic/pic24.png" }
+        .cm__info
+          %span.cm__tw
+          Слава
+        .cm__body
+          %textarea.cm__area
+            Грандиозно!
+          %input{ :type => "submit", :value => "Комментировать" }

@@ -1,0 +1,59 @@
+$floor-selector--border: 2px solid #ccc
+$floor-selector--item-v-padding: 5px 
+$floor-selector--item-width: 70px
+
+$module: floor-selector
+
+.#{$module}__text
+  display: inline-block
+  vertical-align: middle
+  margin-right: 38px
+  color: #FFF
+
+.#{$module}__cont
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  &:hover,
+  &.hover
+    .#{$module}__links
+      display: block
+
+.#{$module}__current
+  position: relative
+  padding-top: $floor-selector--item-v-padding
+  padding-bottom: $floor-selector--item-v-padding
+  padding-right: 20px
+  width: $floor-selector--item-width
+  height: 39px
+  border: $floor-selector--border
+  text-align: center
+  color: #FFF
+  &:after
+    content: ' '
+    position: absolute
+    right: 13px
+    top: 16px
+    width: 10px
+    height: 5px
+    background: url(images/arrow_select.svg) 0 0 no-repeat
+    background-size: 10px auto
+
+.#{$module}__links
+  display: none
+  position: absolute
+  left: 0
+  bottom: 100%
+  width: 100%
+  border-left: $floor-selector--border
+  border-right: $floor-selector--border
+  background-color: #FFF
+  a
+    display: block
+    padding-top: $floor-selector--item-v-padding
+    padding-bottom: $floor-selector--item-v-padding
+    border-top: $floor-selector--border
+    text-align: center
+    color: #000
+    &:hover
+      color: #000

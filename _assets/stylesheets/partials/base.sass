@@ -1,0 +1,186 @@
+body
+  background-color: #e5e5e5
+  overflow-y: scroll
+
+html:not(.loaded)
+  overflow: hidden
+  height: 100%
+  body
+    height: 100%
+    background-position: 50% 0
+    background-repeat: no-repeat
+    background-image: url(images/screen_first.jpg)
+    +background-cover
+
+.preloader-title
+  position: relative
+  left: 50%
+  top: 50%
+  width: 300px
+  height: 64px
+  margin-left: -150px
+  margin-top: -32px
+  background-position: 0 0
+  background-repeat: no-repeat
+  background-size: 300px auto
+  background-image: url(images/title_bright.svg)
+
+.loaded
+  .preloader-title
+    display: none
+
+.scrollable
+  +translate3d-default
+
+.page
+  position: relative
+  visibility: hidden
+  max-width: $max-width
+  background-color: #FFF
+  +box-shadow(0 0 15px #b1b1b1)
+  min-height: 100%
+  overflow: hidden
+  @media only screen and (min-width: $max-width)
+    margin: 0 auto
+  +transition(transform 400ms)
+  &.social-menu
+    overflow: visible
+    @media only screen and (max-width: 767px)
+      +transform(translate3d(0px,40px,0))
+
+.skrollr
+  .page
+    height: 100%
+
+.loaded
+  .page
+    visibility: visible
+
+.content-main
+  visibility: hidden
+  background-color: #FFF // rgba(255,255,255,0.9)
+  position: relative
+
+.loaded
+  .content-main
+    visibility: visible
+
+.wrap-bg
+  background-color: #FFF
+  // overflow: hidden // ! NOT this ruins social like popups
+
+h1,h2,h3,h4,h5,h6
+  font-family: $font-family-second
+
+h1,h2,h3,h4,h5,h6,p,
+.fonm-group
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+h1,
+.h1
+  font-size: 40px
+
+.font-xlarge
+  font-family: $font-family-second
+  @media only screen and (max-width: 767px)
+    font-size: 20px
+    line-height: $line-height-base
+  @media only screen and (min-width: 768px)
+    font-size: 30px
+    line-height: 50px
+
+.font-large
+  font-family: $font-family-second
+  @media only screen and (max-width: 767px)
+    font-size: 18px
+  @media only screen and (min-width: 768px)
+    font-size: 24px
+
+$image-block--margin: 30px
+
+%image-block
+  margin-bottom: $image-block--margin
+  img
+    max-width: 100%
+
+.image_right
+  @extend %image-block
+  @media only screen and (min-width: 768px)
+    float: right
+    margin-left: $image-block--margin
+
+.image_left
+  @extend %image-block
+  @media only screen and (min-width: 768px)
+    float: left
+    margin-right: $image-block--margin
+
+.image-caption
+  margin-top: 80px
+  display: block
+  line-height: 2.2
+
+.image_left_caption-center
+  @media only screen and (max-width: 1023px)
+    img
+      max-width: 100%
+  @media only screen and (min-width: 1024px)
+    white-space: nowrap
+    img
+      display: inline-block
+      vertical-align: middle
+      max-width: 70%
+    .caption
+      display: inline-block
+      vertical-align: middle
+      margin-left: -0.25em
+      padding-left: 10px
+      width: 30%
+      white-space: normal
+
+.clear-right
+  clear: right
+
+.clear-left
+  clear: left
+
+.clear-divider
+  margin: 0
+  border: 0
+  clear: both
+
+.clearfix
+  &:before,
+  &:after
+    content: ' '
+    display: table
+    clear: both
+
+.scroll-hint
+  position: fixed
+  left: 50%
+  bottom: 20px
+  width: 28px
+  margin-left: -14px
+  +animation(scroll-hint 1000ms infinite)
+  &:after
+    content: ' '
+    display: block
+    width: 28px
+    height: 17px
+    background: url(images/arrow_select.svg) 0 0 no-repeat
+    background-size: 28px auto
+  &:not(.skrollable),
+  &.skrollable-after
+    display: none
+
++keyframes(scroll-hint)
+  0%
+    +transform(translate3d(0px,0px,0))
+  50%
+    +transform(translate3d(0px,10px,0))
+  100%
+    +transform(translate3d(0px,0px,0))

@@ -1,0 +1,38 @@
+$module: floor-switcher
+
+%#{$module}--select-button
+  display: block
+  position: relative
+  height: 52px
+  &:after
+    content: ' '
+    position: absolute
+    left: 50%
+    width: 15px
+    height: 9px
+    margin-left: -7px
+    background-position: 0 0
+    background-repeat: no-repeat
+
+.#{$module}__select-top
+  @extend %#{$module}--select-button
+  &:after
+    top: 6px
+    background-image: url(images/arrow_floor_top.svg)
+
+.#{$module}__select-number
+  text-align: center
+  font-size: 26px
+  line-height: 32px
+  margin-left: 5px
+  margin-right: 5px
+
+.#{$module}__select-text
+  text-align: center
+  line-height: 1.2
+
+.#{$module}__select-bottom
+  @extend %#{$module}--select-button
+  &:after
+    bottom: 6px
+    background-image: url(images/arrow_floor_bottom.svg)

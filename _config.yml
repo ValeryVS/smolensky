@@ -1,0 +1,23 @@
+title: Смоленский пассаж
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bower.json
+  - config.rb
+  - .git
+  - .bowerrc
+  - README.md
+gems:
+  - jekyll-assets
+
+assets:
+  baseurl: assets/
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/bower_components/bootstrap-sass-twbs/assets/stylesheets
+    - _assets/bower_components/bootstrap-sass-twbs/assets/fonts
+    - _assets/bower_components
+  gzip: false

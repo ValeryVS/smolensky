@@ -1,0 +1,142 @@
+$module: instagram
+
+.#{$module}__views
+  @extend %info__views_dark
+
+.#{$module}__comments
+  @extend %info__comments_dark
+
+.#{$module}__likes
+  @extend %info__likes_dark
+
+.#{$module}
+  position: relative
+  @media only screen and (max-width: 767px)
+    padding: 90px 10px
+  @media only screen and (min-width: 768px)
+    padding: 165px 450px 90px 120px
+  &__title
+    margin-bottom: 40px
+  &__subtitle
+    font-weight: bold
+    margin-bottom: 0
+  &__image
+    max-width: 100%
+    @media only screen and (max-width: 767px)
+      margin-top: 10px
+      margin-bottom: 10px
+    @media only screen and (min-width: 768px)
+      position: absolute
+      right: 120px
+      top: 90px
+  &__counters
+    margin-bottom: 35px
+  ol
+    padding: 0
+    li
+      list-style-position: inside
+
+$im-photoes--glutter: 20px
+
+$module: im-photoes
+
+.#{$module}
+  @media only screen and (max-width: 767px)
+    padding: 0 10px 90px
+  @media only screen and (min-width: 768px)
+    padding: 0 120px 90px
+  &__nav
+    +make-row(0)
+    margin-bottom: 15px
+
+  &__find
+    @media only screen and (max-width: 767px)
+      margin-bottom: 10px
+    @media only screen and (min-width: 768px)
+      float: left
+    &__text
+      @extend .smolensky-form-control-primary
+    &__submit
+      @extend .smolensky-form-control-search
+
+  &__sort
+    @media only screen and (max-width: 767px)
+      margin-bottom: 10px
+    @media only screen and (min-width: 768px)
+      float: right
+    a
+      @extend .smolensky-btn-prymary
+      &:not(:last-child)
+        margin-right: 5px
+
+  &__caption
+    @extend .form-title
+
+  &__list
+    +make-row(80px)
+  &__item
+    margin-bottom: 5px
+    position: relative
+    +make-xs-column(12, $recommend--glutter)
+    +make-sm-column(6, $recommend--glutter)
+    +make-lg-column(3, $recommend--glutter)
+    text-align: center
+  &__info
+    margin-top: 3px
+    text-align: left
+    width: 240px
+    margin-left: auto
+    margin-right: auto
+  &__likes
+    float: right
+    position: relative
+    &:before
+      content: ' '
+      display: inline-block
+      vertical-align: middle
+      width: 26px
+      height: 26px
+      background-position: 0 0
+      background-repeat: no-repeat
+      background-image: url(images/like_text.svg)
+      background-size: 26px auto
+    &.liked:before
+      background-image: url(images/like_liked_text.svg)
+
+$module: instagram-inner
+
+.#{$module}
+  @media only screen and (max-width: 767px)
+    padding: 90px 10px 35px
+  @media only screen and (min-width: 768px)
+    padding: 155px 120px 35px
+  &__info
+    margin-bottom: 75px
+  &__name
+    display: inline-block
+    vertical-align: middle
+    font-size: 40px
+    line-height: 70px
+    font-family: $font-family-second
+    margin-right: 60px
+  &__likes
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    padding-left: 120px
+    font-family: $font-family-second
+    font-size: 46px
+    line-height: 70px
+    &:after
+      content: ' '
+      position: absolute
+      left: 0
+      top: 0
+      background-position: 0 0
+      background-repeat: no-repeat
+      width: 80px
+      height: 74px
+      background-size: 80px auto
+      background-image: url(images/like_text.svg)
+    &.liked:after
+      background-image: url(images/like_liked_text.svg)

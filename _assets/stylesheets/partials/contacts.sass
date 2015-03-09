@@ -1,0 +1,23 @@
+$module: contacts
+
+.#{$module}
+  position: relative
+  @media only screen and (max-width: 767px)
+    padding: 90px 10px
+  @media only screen and (min-width: 768px)
+    padding: 165px 120px 90px
+    max-width: 1200px
+    margin: 0 auto
+  &__title
+    margin-bottom: 65px
+
+#contacts_map
+  @media only screen and (max-width: 1023px)
+    height: 343px
+    background-image: url(images/map_sm.png)
+  @media only screen and (min-width: 1024px)
+    height: 895px
+    background-image: url(images/map.png)
+  background-position: 50% 50%
+  +background-contain
+  margin-bottom: 60px

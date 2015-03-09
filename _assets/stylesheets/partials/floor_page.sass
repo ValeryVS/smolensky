@@ -1,0 +1,57 @@
+$module: floor-page
+
+.#{$module}
+  @media only screen and (max-width: 767px)
+    padding: 90px 10px
+  @media only screen and (min-width: 768px)
+    padding: 90px 120px
+  &__title
+    margin-bottom: 40px
+  &__plan
+    +make-row(0)
+    position: relative
+    @media only screen and (min-width: 768px)
+      padding-left: 35px
+  &__switcher
+    position: absolute
+    z-index: 1
+    left: 0
+    top: 0
+  &__image
+    +make-xs-column(12,0)
+    +make-md-column(6,0)
+    text-align: center
+    svg
+      max-width: 100%
+    @media only screen and (max-width: 767px)
+      padding-left: 35px
+  &__nav
+    +make-xs-column(12,0)
+    +make-md-column(6,0)
+  &__button-block
+    margin-bottom: 30px
+  &__button
+    @extend .btn
+    font-size: 20px
+    color: #777
+    padding: 10px 20px
+    border: 2px solid transparent
+    border-radius: 0
+    &.active,
+    &:hover
+      color: #000
+      border-color: #000
+  &__contect-form
+    label
+      width: 100%
+      font-weight: normal
+      color: #777
+  &__form-title
+    @extend .form-group
+    font-size: 18px
+    font-weight: bold
+  &__submit
+    @extend .btn
+    padding: 20px 50px
+    border: 1px solid #000
+    background-color: transparent

@@ -1,0 +1,79 @@
+$module: blog
+
+.#{$module}
+  @extend .brand
+  @media only screen and (max-width: 767px)
+    padding: 130px 10px
+  @media only screen and (min-width: 768px)
+    padding: 130px 120px 90px
+    max-width: 1200px
+    margin: 0 auto
+
+$module: blog-head
+
+.#{$module}
+  position: relative
+  margin-bottom: 60px
+  &__type
+    font-size: 20px
+  &__title
+    margin-top: 35px
+    margin-bottom: 45px
+    font-size: 42px
+    font-family: $font-family-second
+  // &__counters
+  &__author
+    width: 125px
+    @media only screen and (max-width: 767px)
+      position: relative
+      margin: 30px 0 30px auto
+    @media only screen and (min-width: 768px)
+      position: absolute
+      right: 0
+      top: 45px
+    &__text
+      margin-bottom: 10px
+    &__img
+      position: absolute
+      left: -100px
+      top: 20px
+    &__name
+      font-size: 18px
+      margin-bottom: 10px
+    &__social_vk,
+    &__social_fb,
+    &__social_tw
+      width: 16px
+      height: 16px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+    &__social_vk
+      background-image: url(assets/images/vk_gray.svg)
+    &__social_fb
+      background-image: url(assets/images/fb_gray.svg)
+    &__social_tw
+      background-image: url(assets/images/tw_gray.svg)
+
+$module: blog-head__info
+
+%#{$module}__counter
+  position: relative
+  display: inline-block
+  padding-left: 30px
+  margin-right: 5px
+  &:after
+    content: ' '
+    position: absolute
+    left: 0
+    top: 0
+    background-position: 0 0
+    background-repeat: no-repeat
+
+.#{$module}__views
+  @extend %info__views_dark
+
+.#{$module}__comments
+  @extend %info__comments_dark
+
+.#{$module}__likes
+  @extend %info__likes_dark

@@ -1,0 +1,117 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_bright{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+/ first screen
+.screen{ :role => "screen" }
+  .screen__decor
+  .screen__content
+    .screen__content-title Что может быть лучше,<br> чем новое платье
+    %a.btn.screen__content-btn{ :href => "javascript:;" } Пройтись по этажам
+    .screen__info
+      .screen__info__col
+        .screen__info__time Открыто ежедневно<br> с 10:00 до 22:00
+      .screen__info__col
+        .screen__info__place В самом центре Москвы<br> Смоленская площадь д.3
+      .screen__info__col
+        .screen__info__about 3-х уровневый<br> подземный паркинг
+
+.content-main{ :role => "content" }
+  / bricks
+  .brick__container{ :role => 'masonry' }
+    %a.brick{ :href => "brand.html", "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic2.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "new" } Новинки
+        .brick__info__title Весенний макияж
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes.liked 222
+    %a.brick{ :href => "brand.html", "data-width" => 3, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic3.png" }
+      .brick__info_overlay.bright{ :role => "brick-info-overlay" }
+        .brick__info__tag{ "data-type" => "show" } Показ
+        .brick__info__title Модный показ в Смоленском
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-height" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic4.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "sale" } Скидки
+        .brick__info__title Весенний макияж
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes.liked 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic5.png" }
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic6.png" }
+      .brick__info_bottom_right{ :role => "brick-info", "data-h" => "right", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "article" } Статья
+        .brick__info__title Stone Island Shadow Project SS'014
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes.liked 222
+    %a.brick{ :href => "brand.html", "data-width" => 3 }
+      %img.brick__img{ :src => "assets/pic/pic7.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "contest" } Конкурс
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic8.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__tag{ "data-type" => "show" } Показ
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2, "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic9.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-height" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic10.png" }
+      .brick__info_bottom_left{ :role => "brick-info", "data-h" => "left", "data-v" => "bottom" }
+        .brick__info__title Заголовок
+        .brick__info__counters
+          .brick__info__views 222
+          .brick__info__comments 222
+          .brick__info__likes 222
+    %a.brick{ :href => "brand.html", "data-width" => 2 }
+      %img.brick__img{ :src => "assets/pic/pic11.png" }
+
+  / floor links block
+  .floor-links
+    %h1.floor-links__title Самое интересное на этаже:
+    %nav.floor-links__nav
+      %a{ :href => "floor_0.html" } 0 этаж
+      %a{ :href => "floor_1.html" } 1 этаж
+      %a{ :href => "floor_2.html" } 2 этаж
+      %a{ :href => "floor_3.html" } 3 этаж
+      %a{ :href => "floor_4.html" } 4 этаж

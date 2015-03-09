@@ -1,0 +1,130 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+/ first screen
+.screen_first{ :role => "screen" }
+  %img.screen_first__bg-image{ :role => "screen-bg-image", :src => "assets/pic/pic14.png" }
+  .screen_first__title
+    Agent Provocateur
+    .screen_first__subtitle Нижнее белье и аксессуары
+  .screen_first__counters
+    .screen_first__views 222
+    .screen_first__comments 222
+    .screen_first__likes 222
+  .screen_first__back
+    %span.screen_first__select-text Назад на
+    %span.screen_first__select-number 2
+    %span.screen_first__select-text этаж
+
+.content-main{ :role => "content" }
+  %section.brand.clearfix
+    %a.brand__link{ :href => "http://www.agentprovocateur.ru/" } www.agentprovocateur.ru
+
+    %h1.brand__title.font-xlarge Компания Agent Provocateur была основана Джо Корром (Joe Corre) и Сереной Риз (Serena Rees) в 1994 году, в котором и открылся их первый бутик в Лондоне.
+    %img.image_right{ :src => "assets/pic/pic15.png", :alt => "" }
+    %p С тех пор Agent Provocateur стал всемирно узнаваемой маркой, которая сразуже стала эталоном среди бельевых брендов. Неповторимый имидж AgentProvocateur всегда узнаваем благодаря своей провокационности, которая, тем не менее, оставляет пространство и для воображения.
+    %p При этом помимо дизайнерских новинок с оригинальным кроем и цветовым решением Клиентам Agent Provocateur всегда предлагается классическая линия белья и аксессуаров, сочетающая в себе утонченную красоту с комфортными формами в высоко качественном исполнении. Креативный директор AgentProvocateur Сара Шоттон (Sarah Shotton) демонстрирует поклонницам Бренда, что Белье должно возбуждать не только того, кто на это белье смотрит, но и того, кто носит это белье!
+    %hr.clear-divider
+    %img.image_left{ :src => "assets/pic/pic16.png", :alt => "В компании Agent Provocateur всегда понимали важность союза между соблазнением и ароматом, поэтому в 2000 году Agent Provocateur запустили свой первый одноименные аромат, который позднее был признан «Лучшей новинкой года»." }
+    %p.font-large На данный момент, в мире больше 50 точек продаж продукции Agent Provocateur, включая бутики в Великобритании, Франции, Германии, Испании, России, США, Канаде, ОАЭ и в странах Азии.
+    %table
+      %tr
+        %td
+          Рекламные кампании Agent Provocateur всегда привлекали повышенное внимания СМИ. В январе 2009 года видео «Proof» с Кайли Миноуг (Kylie Minogue) было признано лучшим рекламным роликов всех времен.
+        %td
+          Каждый магазин выглядит как роскошный будуар, интерьер которого дополняет белье и аксессуары Agent Provocateur, а сотрудников бутика легко узнать по фирменным розовым халатам, которые были созданы Вивьен Вествуд ( Vivienne Westwood).
+    <br><br><br><br><br><br><br><br>
+    %p.font-large
+      Сегодня Agent Provocateur выпускает купальники, чулки, линию косметических средств, а также аксессуары, дополняющиебельевую линию.
+
+  %section.share-block
+    %h1.share-block__title Рассказать друзьям
+    .share-block__buttons
+      / кнопки сюда
+      .share-block__item
+      .share-block__item
+      .share-block__item
+    %hr
+
+  %section.recommend
+    %h1.recommend__title Возможно вам понравится
+    .recommend__cont
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic17.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Скидки
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic18.png" }
+          .recommend__item__tag{ "data-type" => "new" } Новый
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic19.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Статья
+          .recommend__item__text Весенний макияж
+      .recommend__item
+        %a.recommend__item__content{ :href => "#" }
+          %img.recommend__item__image{ :src => "assets/pic/pic20.png" }
+          .recommend__item__tag{ "data-type" => "sale" } Конкурс
+          .recommend__item__text Весенний макияж
+    .recommend__load{ :role => "recommend-load" }
+      загрузить еще
+
+  .comments
+    .comments__title Комментарии
+    .comments__login{ :role => "login" } Прокомментировать
+    .comments__list
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic21.png" }
+        .cm__info
+          %span.cm__vk
+          Маша
+        .cm__body
+          .cm__content
+            Восхитительно!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic22.png" }
+        .cm__info
+          %span.cm__fb
+          Слава
+        .cm__body
+          .cm__content
+            Нереально!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+        .cm__item_inner
+          %img.cm__logo_inner{ :src => "assets/pic/pic23.png" }
+          .cm__info_inner
+            %span.cm__tw
+            Андрей
+          .cm__body_inner
+            .cm__content_inner
+              +1
+            .cm__time Сегодня, в 18:37
+            %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__form
+        %img.cm__logo{ :src => "assets/pic/pic24.png" }
+        .cm__info
+          %span.cm__tw
+          Слава
+        .cm__body
+          %textarea.cm__area
+            Грандиозно!
+          %input{ :type => "submit", :value => "Комментировать" }

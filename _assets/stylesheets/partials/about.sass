@@ -1,0 +1,23 @@
+$module: about
+
+.#{$module}
+  position: relative
+  @media only screen and (max-width: 767px)
+    padding: 90px 10px
+  @media only screen and (min-width: 768px)
+    padding: 90px 120px
+    max-width: 1200px
+    margin: 0 auto
+  p
+    line-height: 2
+    margin-bottom: 35px
+  &__title
+    margin-top: 0
+    font-family: $font-family-second
+    @media only screen and (min-width: 768px)
+      width: 70%
+
+$module: about-head
+
+.#{$module}
+  margin-bottom: 80px

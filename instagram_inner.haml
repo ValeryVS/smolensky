@@ -1,0 +1,74 @@
+---
+layout: default
+title: 
+description: 
+---
+
+%header.header_dark{ :role => "header" }
+  %a.header__title{ :href => "/" } {{ site.title }}
+  %a.menu-main__open{ :href => "javascript:;", :role => "menu-main-open" }
+  %nav.social__menu{ :role => "social-menu" }
+    .social__menu__links
+      %a.social__vk{ :href => "#" }
+      %a.social__fb{ :href => "#" }
+      %a.social__in{ :href => "#" }
+      %a.social__tw{ :href => "#" }
+
+.content-main{ :role => "content" }
+  %section.instagram-inner
+    .instagram-inner__info
+      .instagram-inner__name Masha_Masha
+      .instagram-inner__likes 526
+    %img.instagram-inner__image{ :src => "assets/pic/pic59.png" }
+
+  %section.share-block
+    %h1.share-block__title Проголосуйте! 
+    .share-block__buttons
+      / кнопки сюда
+      .share-block__item
+      .share-block__item
+      .share-block__item
+
+  .comments
+    .comments__title Комментарии
+    .comments__login Прокомментировать
+    .comments__list
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic21.png" }
+        .cm__info
+          %span.cm__vk
+          Маша
+        .cm__body
+          .cm__content
+            Восхитительно!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__item
+        %img.cm__logo{ :src => "assets/pic/pic22.png" }
+        .cm__info
+          %span.cm__vk
+          Слава
+        .cm__body
+          .cm__content
+            Нереально!
+          .cm__time Сегодня, в 18:37
+          %a.cm__answer{ :href => "javascript:;" } Ответить
+        .cm__item_inner
+          %img.cm__logo_inner{ :src => "assets/pic/pic23.png" }
+          .cm__info_inner
+            %span.cm__vk
+            Андрей
+          .cm__body_inner
+            .cm__content_inner
+              +1
+            .cm__time Сегодня, в 18:37
+            %a.cm__answer{ :href => "javascript:;" } Ответить
+      .cm__form
+        %img.cm__logo{ :src => "assets/pic/pic24.png" }
+        .cm__info
+          %span.cm__vk
+          Слава
+        .cm__body
+          %textarea.cm__area
+            Грандиозно!
+          %input{ :type => "submit", :value => "Комментировать" }

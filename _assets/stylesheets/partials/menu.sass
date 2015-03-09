@@ -1,0 +1,375 @@
+$top-z-index: 10000
+
+$module: header
+
+%#{$module}
+  position: absolute
+  left: 0
+  top: 0
+  z-index: $top-z-index + 1
+  width: 100%
+  height: 60px
+  @media only screen and (min-width: $max-width)
+    position: absloute
+    top: 0
+    left: 50%
+    width: $max-width
+    margin-left: -$max-width/2
+
++keyframes(menu-show)
+  0%
+    +transform(translate3d(0px,-100px,0))
+  100%
+    +transform(translate3d(0px,0px,0))
+
+.#{$module}
+  &_bright
+    @extend %header
+  &_dark
+    @extend %header
+  &__title
+    position: absolute
+    left: 50%
+    top: 14px
+    display: block
+    width: 160px
+    height: 35px
+    margin-left: -80px
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: 160px auto
+    text-indent: -9999px
+
+.skrollr
+  .#{$module}_bright,
+  .#{$module}_dark
+    &.skrollable-after
+      &:not(.menu)
+        background-color: #FFF
+        border-bottom: 2px solid #777
+        +animation(menu-show 400ms)
+    @media only screen and (min-width: $scrollr-width) and (max-width: $max-width - 1)
+      position: fixed
+      left: 0
+      top: 0
+    @media only screen and (min-width: $max-width)
+      position: fixed
+
+.header_bright.menu,
+.header_bright.skrollable-after.menu,
+.header_dark.menu,
+.header_bright
+  .#{$module}__title
+    background-image: url(images/title_bright.svg)
+
+.header_bright.skrollable-after,
+.header_dark
+  .#{$module}__title
+    background-image: url(images/title_dark.svg)  
+
+$social-item-size: 40px
+
+$module: social
+
+.#{$module}
+  &__menu
+    position: absolute
+    right: 30px
+    top: 8px
+    width: $social-item-size
+    height: $social-item-size
+    overflow: hidden
+    padding-right: $social-item-size
+    @media only screen and (min-width: 768px)
+      +transition(width 400ms)
+    &:after
+      content: ' '
+      position: absolute
+      bottom: 0
+      right: 0
+      width: $social-item-size
+      height: $social-item-size
+      background-position: 50% 50%
+      background-repeat: no-repeat
+    &:hover,
+    &.active
+      @media only screen and (min-width: 768px)
+        width: $social-item-size*5
+  &__menu__links
+    @media only screen and (max-width: 767px)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: $social-item-size
+      background-color: #666
+      &.active
+        display: block
+    @media only screen and (min-width: 768px)
+      position: absolute
+      top: 0
+      right: $social-item-size
+      width: $social-item-size*4
+    display: none
+  &__vk,
+  &__fb,
+  &__in,
+  &__tw
+    display: block
+    float: right
+    width: $social-item-size
+    height: $social-item-size
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    &:hover
+      background-color: #10CCE8
+  &__vk
+    background-image: url(images/vk_dark.svg)
+    background-size: auto 18px
+  &__fb
+    background-image: url(images/fb_dark.svg)
+    background-size: auto 20px
+  &__in
+    background-image: url(images/in_dark.svg)
+    background-size: auto 30px
+  &__tw
+    background-image: url(images/tw_dark.svg)
+    background-size: auto 18px
+
+.loaded
+  .#{$module}__menu__links:not(.mobile)
+    @media only screen and (min-width: 768px)
+      display: block
+
+.header_bright.menu,
+.header_bright.skrollable-after.menu,
+.header_dark.menu,
+.header_bright
+  .#{$module}__menu
+    &:after
+      background-image: url(images/menu_social_bright.svg)
+    &.active
+      @media only screen and (max-width: 767px)
+        &:after
+          background-image: url(images/menu_active_bright.svg)
+          background-size: 24px auto
+  .#{$module}
+    &__vk
+      background-image: url(images/vk_bright.svg)
+      background-size: auto 18px
+    &__fb
+      background-image: url(images/fb_bright.svg)
+      background-size: auto 20px
+    &__in
+      background-image: url(images/in_bright.svg)
+      background-size: auto 30px
+    &__tw
+      background-image: url(images/tw_bright.svg)
+      background-size: auto 18px
+
+.header_bright.skrollable-after,
+.header_dark
+  .#{$module}__menu
+    &:after
+      background-image: url(images/menu_social_dark.svg)
+    &.active
+      @media only screen and (max-width: 767px)
+        &:after
+          background-image: url(images/menu_active_dark.svg)
+          background-size: 24px auto
+  .#{$module}
+    &__vk
+      background-image: url(images/vk_dark.svg)
+      background-size: auto 18px
+    &__fb
+      background-image: url(images/fb_dark.svg)
+      background-size: auto 20px
+    &__in
+      background-image: url(images/in_dark.svg)
+      background-size: auto 30px
+    &__tw
+      background-image: url(images/tw_dark.svg)
+      background-size: auto 18px
+
+$module: menu-main
+
+.#{$module}
+  display: none
+  position: absolute
+  z-index: $top-z-index
+  width: 100%
+  height: 0
+  @media only screen and (min-width: $max-width)
+    position: absolute
+    top: 0
+    left: 50%
+    width: $max-width
+    margin-left: -$max-width/2
+  +transition(height 1200ms)
+  &.active
+    display: block
+
+.skrollr
+  .#{$module}
+    @media only screen and (min-width: $scrollr-width) and (max-width: $max-width - 1)
+      position: fixed
+      top: 0
+      left: 0
+    @media only screen and (min-width: $max-width)
+      position: fixed
+
+.#{$module}__content
+  height: 660px
+  height: 100vh
+  +make-row(0)
+  background-color: #FFF
+
+.#{$module}__open
+  position: absolute
+  left: 30px
+  top: 17px
+  width: 24px
+  height: 24px
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: 24px auto
+
+.header_bright.menu,
+.header_bright.skrollable-after.menu,
+.header_dark.menu,
+.header_bright
+  .#{$module}__open
+    background-image: url(images/menu_bright.svg)
+    &.active
+      background-image: url(images/menu_active_bright.svg)
+
+.header_bright.skrollable-after,
+.header_dark
+  .#{$module}__open
+    background-image: url(images/menu_dark.svg)
+    &.active
+      background-image: url(images/menu_active_dark.svg)
+
+.#{$module}__title
+  position: absolute
+  z-index: 1
+  left: 50%
+  top: 14px
+  width: 160px
+  height: 35px
+  margin-left: -80px
+  background-position: 0 0
+  background-repeat: no-repeat
+  background-image: url(images/title_bright.svg)
+  background-size: 160px auto
+  text-indent: -9999px
+
+%#{$module}__block
+  +make-xs-column(12, 0)
+  +make-sm-column(6, 0)
+  +make-md-column(4, 0)
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: auto 80%
+  @media only screen and (min-width: 768px)
+    +vertical-middle-cont
+  @media only screen and (min-width: 768px) and (max-width: 991px)
+    height: 33.33%
+  @media only screen and (min-width: 992px)
+    height: 50%
+
+$info-bg-color: #2F2432
+
+.#{$module}__info
+  @extend %#{$module}__block
+  background-color: $info-bg-color
+  @media only screen and (max-width: 767px)
+    padding: 50px 10px 10px
+  @media only screen and (min-width: 768px) and (max-width: 969px)
+    padding: 60px 40px 30px
+  @media only screen and (min-width: 970px) and (max-width: 1199px)
+    padding: 50px 20px 20px
+  @media only screen and (min-width: 1200px)
+    padding: 60px 40px 30px
+
+.#{$module}__floor_minus1
+  @extend %#{$module}__block
+  background-image: url(images/menu_floor0.png)
+  background-color: #503957
+
+.#{$module}__floor_1
+  @extend %#{$module}__block
+  background-image: url(images/menu_floor1.png)
+  background-color: #896276
+
+.#{$module}__floor_2
+  @extend %#{$module}__block
+  background-image: url(images/menu_floor2.png)
+  background-color: #E6635A
+
+.#{$module}__floor_3
+  @extend %#{$module}__block
+  background-image: url(images/menu_floor3.png)
+  background-color: #FF814A
+
+.#{$module}__floor_4
+  @extend %#{$module}__block
+  background-image: url(images/menu_floor4.png)
+  background-color: #FFA136
+
+.#{$module}__floor-text
+  width: 100%
+  padding: 20px
+  +vertical-middle-item
+  text-align: center
+  color: #FFF
+  font-size: 12px
+  @media only screen and (max-width: 767px)
+    padding: 10px
+    p
+      margin-bottom: 0
+  @media only screen and (min-width: 768px)
+    padding: 20px
+    line-height: 20px
+
+.#{$module}__links
+  +make-row(0)
+  margin-left: auto
+  margin-right: auto
+  max-width: 250px
+  a
+    +make-xs-column(6, 0)
+    color: #FFF
+    @media only screen and (min-width: 768px)
+      font-size: 18px
+    @media only screen and (min-height: 665px)
+      margin-bottom: 15px
+
+.#{$module}__divider
+  position: relative
+  border-top-color: #3D2F40
+  &:after
+    content: ' '
+    display: block
+    position: absolute
+    left: 50%
+    top: -10px
+    margin-left: -33px
+    width: 66px
+    height: 20px
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-color: $info-bg-color
+    background-image: url(images/menu_divider.svg)
+    background-size: 45px auto
+
+.#{$module}__address
+  margin-bottom: 10px
+  text-align: center
+  font-size: 16px
+  color: #FFF
+
+.#{$module}__time
+  font-size: 12px
+  text-align: center
+  color: #ccc

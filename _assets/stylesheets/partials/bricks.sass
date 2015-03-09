@@ -1,0 +1,335 @@
+.csstransforms.no-csstransforms3d
+  .brick-move
+    @media only screen and (min-width: 768px)
+      +transform(translateY(-240px))
+
+.csstransforms3d
+  .brick-move
+    @media only screen and (min-width: 768px)
+      +transform(translate3d(0px,-240px,0))
+
+$module: brick
+
+.#{$module}__container
+  // overflow: hidden // no hide, moved brick disappears
+  &.move
+    @media only screen and (min-width: 768px)
+      margin-top: -240px
+
+.#{$module}
+  position: relative
+  color: $text-color
+  &:before
+    content: ' '
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border: 0 solid #FFF
+    +box-sizing(content-box)
+    left: 0
+    top: 0
+    +transition(left,top,border-width 400ms,400ms,400ms linear,linear,linear)
+  &:hover
+    z-index: 2
+    color: $text-color
+    &:before
+      // +animation(brick-hover 400ms forwards)
+      border-width: 7px
+      left: -7px
+      top: -7px
+      +box-shadow(0 0 7px rgba(0,0,0,0.6))
+
+// +keyframes(brick-hover)
+//   0%
+//     border-width: 0
+//     left: 0
+//     top: 0
+//   100%
+//     border-width: 7px
+//     left: -7px
+//     top: -7px
+
+.#{$module}__img
+  display: none
+
+.arrow_left
+  &:after
+    content: ' '
+    position: absolute
+    top: 30px
+    right: 100%
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 14px 14px 14px 0
+    border-color: transparent #ffffff transparent transparent
+.arrow_right
+  &:after
+    content: ' '
+    position: absolute
+    top: 30px
+    left: 100%
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 14px 0 14px 14px
+    border-color: transparent transparent transparent #ffffff
+.arrow_top
+  &:after
+    content: ' '
+    position: absolute
+    bottom: 100%
+    left: 30px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 14px 14px 14px
+    border-color: transparent transparent #ffffff transparent
+.arrow_bottom
+  &:after
+    content: ' '
+    position: absolute
+    top: 100%
+    left: 30px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 14px 14px 0 14px
+    border-color: #ffffff transparent transparent transparent
+
+%#{$module}__info
+  position: absolute
+  z-index: 1
+  background-color: #FFF
+
+.#{$module}__info_bottom_left
+  @extend %#{$module}__info
+  bottom: 0
+  left: 0
+
+.#{$module}__info_bottom_right
+  @extend %#{$module}__info
+  bottom: 0
+  right: 0
+
+.#{$module}__info_top_left
+  @extend %#{$module}__info
+  top: 0
+  left: 0
+
+.#{$module}__info_top_right
+  @extend %#{$module}__info
+  top: 0
+  right: 0
+
+%#{$module}__bg
+  position: absolute
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  +background-cover
+
+.#{$module}__bg_bottom_left
+  @extend %#{$module}__bg
+  bottom: 0
+  left: 0
+
+.#{$module}__bg_bottom_right
+  @extend %#{$module}__bg
+  bottom: 0
+  right: 0
+
+.#{$module}__bg_top_left
+  @extend %#{$module}__bg
+  top: 0
+  left: 0
+
+.#{$module}__bg_top_right
+  @extend %#{$module}__bg
+  top: 0
+  right: 0
+
+%brick__info--counter
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  margin-right: 5px
+  font-size: 12px
+  // @media only screen and (max-width: 767px)
+  //   padding-left: 15px
+  // @media only screen and (min-width: 768px)
+  //   padding-left: 30px
+  &:before
+    content: ' '
+    display: inline-block
+    vertical-align: middle
+    margin-right: 3px
+    background-position: 0 0
+    background-repeat: no-repeat
+
+%brick-info-tag
+  padding: 5px 10px
+  border: 1px solid $text-color
+  font-size: 10px
+  &[data-type="new"]
+    color: #73c728
+    border-color: #73c728
+  &[data-type="sale"]
+    color: #ff5f5f
+    border-color: #ff5f5f
+  &[data-type="article"]
+    color: #3ba0ff
+    border-color: #3ba0ff
+  &[data-type="contest"]
+    color: #ffa200
+    border-color: #ffa200
+  &[data-type="show"]
+    color: #dc39ff
+    border-color: #dc39ff
+  &[data-type="look"]
+    color: #ffa200
+    border-color: #ffa200
+
+%brick-info-title
+  font-family: $font-family-second
+  @media only screen and (max-width: 768px)
+    font-size: 16px
+  @media only screen and (min-width: 769px)
+    font-size: 22px
+
+.brick__info
+  &__tag
+    @extend %brick-info-tag
+    position: absolute
+    @media only screen and (max-width: 1199px)
+      right: 10px
+      top: 10px
+    @media only screen and (min-width: 1200px)
+      right: 20px
+      top: 20px
+  &__avatar
+    position: absolute
+    @media only screen and (max-width: 1199px)
+      left: 10px
+      top: 10px
+    @media only screen and (min-width: 1200px)
+      left: 20px
+      top: 20px
+    width: 30px
+    height: 30px
+    +border-radius(15px) 
+  &__name
+    position: absolute
+    @media only screen and (max-width: 1199px)
+      left: 10px
+      top: 50px
+    @media only screen and (min-width: 1200px)
+      left: 20px
+      top: 60px
+  &__title
+    @extend %brick-info-title
+    position: absolute
+    @media only screen and (max-width: 1199px)
+      left: 10px
+      bottom: 30px
+      width: 110px
+    @media only screen and (min-width: 1200px)
+      left: 20px
+      bottom: 60px
+      width: 175px
+  &__counters
+    @media only screen and (max-width: 1199px)
+      position: absolute
+      left: 10px
+      bottom: 10px
+    @media only screen and (min-width: 1200px)
+      position: absolute
+      left: 20px
+      bottom: 15px
+  &__views
+    @extend %brick__info--counter
+    &:before
+      background-image: url(images/views_text.svg)
+      @media only screen and (max-width: 1199px)
+        width: 13px
+        height: 13px
+        background-size: 13px auto
+      @media only screen and (min-width: 1200px)
+        width: 26px
+        height: 26px
+        background-size: 26px auto
+  &__comments
+    @extend %brick__info--counter
+    &:before
+      background-image: url(images/comments_text.svg)
+      @media only screen and (max-width: 1199px)
+        width: 12px
+        height: 12px
+        background-size: 12px auto
+      @media only screen and (min-width: 1200px)
+        width: 24px
+        height: 24px
+        background-size: 24px auto
+  &__likes
+    @extend %brick__info--counter
+    &:before
+      background-image: url(images/like_text.svg)
+      @media only screen and (max-width: 1199px)
+        width: 13px
+        height: 13px
+        background-size: 13px auto
+      @media only screen and (min-width: 1200px)
+        width: 26px
+        height: 26px
+        background-size: 26px auto
+    &.liked:before
+      background-image: url(images/like_liked_text.svg)
+
+%#{$module}__info_overlay
+  position: absolute
+  z-index: 1
+  .brick__info__tag
+    @extend %brick-info-tag
+    position: static
+    display: inline-block
+    margin-top: 20px
+  .brick__info__title
+    @extend %brick-info-title
+    position: absolute
+    left: 0
+    top: 40%
+    width: 100%
+  .brick__info__counters
+    position: absolute
+    left: 0
+    top: 80%
+    width: 100%
+  &.bright
+    color: #FFF
+    .brick__info__tag
+      color: #FFF
+      border-color: #FFF
+
+.#{$module}__info_overlay
+  @extend %#{$module}__info_overlay
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  text-align: center
+
+.#{$module}__info_overlay_left_center
+  @extend %#{$module}__info_overlay
+  left: 0
+  top: 0
+  width: 240px
+  height: 100%
+
+.#{$module}__info_overlay_right_center
+  @extend %#{$module}__info_overlay
+  right: 0
+  top: 0
+  width: 240px
+  height: 100%

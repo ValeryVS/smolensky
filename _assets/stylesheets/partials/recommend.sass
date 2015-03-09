@@ -1,0 +1,77 @@
+$recommend--glutter: 20px
+
+$module: recommend
+
+.#{$module}
+  @media only screen and (max-width: 767px)
+    padding: 170px 10px 90px
+  @media only screen and (min-width: 768px)
+    padding: 170px 120px 90px
+  &__title
+    text-align: center
+    margin-bottom: 80px
+    font-family: $font-family-second
+  &__cont
+    +make-row(80px)
+  &__item
+    position: relative
+    +make-xs-column(12, $recommend--glutter)
+    +make-sm-column(6, $recommend--glutter)
+    +make-lg-column(3, $recommend--glutter)
+    text-align: center
+    margin-bottom: 40px
+    &__content
+      position: relative
+      display: inline-block
+      width: 240px
+      margin: 0 auto
+      color: $text-color
+      &:hover
+        color: $text-color
+    &__image
+      width: 240px
+      height: 200px
+    &__tag
+      display: block
+      position: absolute
+      right: 10px
+      top: 164px
+      padding: 5px 10px
+      border: 1px solid $text-color
+      font-size: 10px
+      background-color: #FFF
+    &__text
+      text-align: center
+      margin-top: 20px
+      font-size: 24px
+  &__load
+    position: relative
+    padding-top: 95px
+    text-align: center
+    font-size: 16px
+    cursor: pointer
+    width: 120px
+    margin-left: auto
+    margin-right: auto
+    &:before
+      content: ' '
+      position: absolute
+      display: block
+      left: 50%
+      top: 15px
+      width: 40px
+      height: 50px
+      margin-left: -20px
+      background-position: 1px 0
+      background-repeat: no-repeat
+      background-image: url(images/update.svg)
+      +background-contain
+    &.loading
+      &:before
+        +animation(spin 1000ms linear infinite)
+
++keyframes(spin)
+  0%
+    +transform(rotate(0deg))
+  100%
+    +transform(rotate(360deg))
