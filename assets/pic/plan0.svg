@@ -213,7 +213,7 @@
 			c0-1.214,0.984-2.199,2.198-2.199h8.208c1.215,0,2.199,0.985,2.199,2.199V40.127z"/>
 		<text transform="matrix(1 0 0 1 63.5228 40.3053)" fill="#FCEA10" font-family="'MyriadPro-Bold'" font-size="12.3744">P</text>
 	</g>
-	<polygon fill="#F7F1EB" stroke="#F7F1EB" stroke-width="17.8681" stroke-miterlimit="10" points="318.514,61.886 241.285,56.622 
+	<polygon fill="#F7F1EB" stroke="#F7F1EB" stroke-width="17.8681" stroke-miterlimit="10" points="318.514,56.622 
 		8.934,56.622 8.934,461.775 318.514,503.241 	"/>
 	<polygon role="room" data-num="A05" fill="#786E63" stroke="#F7F0EA" stroke-width="1.0511" stroke-miterlimit="10" points="162.489,482.342 137.515,478.997 
 		137.515,433.73 162.489,433.73 	"/>
@@ -246,10 +246,10 @@
 		<use xlink:href="#Новый_символ_12"  width="30.629" height="30.628" x="-15.315" y="-15.314" transform="matrix(0.3597 0 0 -0.3597 121.9178 423.1259)" overflow="visible"/>
 	
 		<use xlink:href="#Новый_символ_12"  width="30.629" height="30.628" x="-15.315" y="-15.314" transform="matrix(0.3597 0 0 -0.3597 199.8648 423.1259)" overflow="visible"/>
-	<polygon fill="#9F958B" stroke="#F7F0EA" stroke-width="1.0511" stroke-miterlimit="10" points="288.12,59.815 264.84,60.256 
+	<polygon fill="#9F958B" stroke="#F7F0EA" stroke-width="1.0511" stroke-miterlimit="10" points="288.12,56.621 264.84,56.621 
 		264.84,78.916 264.84,141.927 264.84,144.28 238.041,144.28 238.041,56.621 184.163,56.621 79.248,56.621 79.248,142.608 
 		57.107,142.608 57.107,56.621 39.745,56.621 8.934,56.621 8.934,166.721 264.84,166.721 288.12,166.561 318.514,166.561 
-		318.514,61.886 	"/>
+		318.514,56.621 	"/>
 	<g>
 		<text transform="matrix(1 0 0 1 155.1156 243.7585)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.3575">А01</text>
 	</g>
@@ -276,7 +276,8 @@
 		<text transform="matrix(1 0 0 1 64.87 425.489)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.19">A07</text>
 	</g>
 	
-		<use xlink:href="#Новый_символ_14"  width="26.932" height="26.932" x="-13.466" y="-13.466" transform="matrix(0.3597 0 0 -0.3597 215.222 407.2288)" overflow="visible"/>
+		<use xlink:href="#Новый_символ_14"  width="26.932" height="26.932" x="-13.466" y="-13.466" transform="matrix(0.3597 0 0 -0.3597 232.222 407.2288)" overflow="visible"/>
+		<use xlink:href="#Новый_символ_14"  width="26.932" height="26.932" x="-13.466" y="-13.466" transform="matrix(0.3597 0 0 -0.3597 90.222 402.2288)" overflow="visible"/>
 	
 		<use xlink:href="#Новый_символ_7"  width="30.629" height="30.629" x="-15.314" y="-15.315" transform="matrix(0.3597 0 0 -0.3597 161.9802 377.5096)" overflow="visible"/>
 	<text transform="matrix(1 0 0 1 226.4271 461.0134)" fill="#DBD9D6" font-family="'MinionPro-BoldIt'" font-size="7.19">Интерьерная Лавка</text>
@@ -633,9 +634,9 @@ m+VEAitZ5ox6A2cwGDirzRYHYG1kPX+lkUaTlf6/AAMADvtEW9m1XNMAAAAASUVORK5CYII=" transf
 		</image>
 	</g>
 	
-		<use xlink:href="#Новый_символ"  width="30.629" height="30.629" x="-15.314" y="-15.315" transform="matrix(0.3597 0 0 -0.3597 199.8645 406.9568)" overflow="visible"/>
+		<use xlink:href="#Новый_символ"  width="30.629" height="30.629" x="-15.314" y="-15.315" transform="matrix(0.3597 0 0 -0.3597 218.8645 406.9568)" overflow="visible"/>
 </g>
 <use xlink:href="#Новый_символ_12"  width="30.629" height="30.628" x="-15.315" y="-15.314" transform="matrix(0.393 0 0 -0.393 19.0884 438.4401)" overflow="visible"/>
-<use xlink:href="#Новый_символ"  width="30.629" height="30.629" x="-15.314" y="-15.315" transform="matrix(0.393 0 0 -0.393 121.3951 406.9535)" overflow="visible"/>
+<use xlink:href="#Новый_символ"  width="30.629" height="30.629" x="-15.314" y="-15.315" transform="matrix(0.393 0 0 -0.393 105.3951 401.9535)" overflow="visible"/>
 <use xlink:href="#Новый_символ_4"  width="30.629" height="30.628" x="-15.314" y="-15.314" transform="matrix(0.3559 0 0 -0.3559 34.9193 397.049)" overflow="visible"/>
 </svg>

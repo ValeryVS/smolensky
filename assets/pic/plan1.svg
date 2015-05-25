@@ -930,7 +930,7 @@
 	79.156,340.649 79.156,325.556 "/>
 <polygon role="room" data-num="B05" fill="#786E63" stroke="#F7F0EA" stroke-miterlimit="10" points="263.556,367.824 320.602,367.824 320.602,513.276 
 	177.795,491.42 177.841,452.897 263.556,452.897 "/>
-<polygon role="room" data-num="R03" fill="#786E63" stroke="#F7F0EA" stroke-miterlimit="10" points="320.602,159.552 320.602,53.718 265.85,51.047 
+<polygon role="room" data-num="R03" fill="#786E63" stroke="#F7F0EA" stroke-miterlimit="10" points="320.602,159.552 320.602,50.782 265.85,50.782 
 	231.392,50.782 231.392,142.783 252.697,142.783 252.652,159.552 "/>
 <rect x="2.843" y="243.726" fill="#9F958B" stroke="#F7F0EA" stroke-miterlimit="22.9256" width="39.382" height="22.489"/>
 <g>
