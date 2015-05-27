@@ -16,17 +16,18 @@ description:
 
 / first screen
 .screen{ :role => "screen" }
+  .screen__overlay{ :style => "background-color:rgba(77, 36, 5, 0.5)" }
   .screen__decor
   .screen__content
     .screen__content-title Что может быть лучше,<br> чем новое платье
     %a.btn.screen__content-btn{ :href => "javascript:;" } Пройтись по этажам
-    .screen__info
-      .screen__info__col
-        .screen__info__time Открыто ежедневно<br> с 10:00 до 22:00
-      .screen__info__col
-        .screen__info__place В самом центре Москвы<br> Смоленская площадь д.3
-      .screen__info__col
-        .screen__info__about 3-х уровневый<br> подземный паркинг
+  .screen__info
+    .screen__info__col
+      .screen__info__time Открыто ежедневно<br> с 10:00 до 22:00
+    .screen__info__col
+      .screen__info__place В самом центре Москвы<br> Смоленская площадь д.3
+    .screen__info__col
+      .screen__info__about 3-х уровневый<br> подземный паркинг
 
 .content-main{ :role => "content" }
   / bricks
