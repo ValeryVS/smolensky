@@ -207,6 +207,7 @@
 <path fill="#FFFFFF" stroke="#F7F0EA" stroke-width="0.7444" stroke-miterlimit="10" d="M175.466,310.602H155.47
 	c-2.457,0-4.467-2.01-4.467-4.467v-44.133c0-2.457,2.01-4.467,4.467-4.467h19.996c2.457,0,4.467,2.01,4.467,4.467v44.133
 	C179.933,308.592,177.923,310.602,175.466,310.602z"/>
+<rect role="room" data-num="D15" x="146.845" y="316.636" fill="#786E63" stroke="#F7F0EA" stroke-width="0.7444" stroke-miterlimit="10" width="37.97" height="25.955"/>
 <rect x="114.334" y="349.04" fill="#FFFFFF" stroke="#F7F0EA" stroke-width="0.7444" stroke-miterlimit="10" width="89.108" height="40.299"/>
 <rect role="room" data-num="D09" x="54.845" y="380.636" fill="#786E63" stroke="#F7F0EA" stroke-width="0.7444" stroke-miterlimit="10" width="37.97" height="25.955"/>
 <polygon role="room" data-num="D10" fill="#786E63" stroke="#F7F0EA" stroke-width="0.7444" stroke-miterlimit="10" points="54.845,303.81 92.885,341.347 
@@ -262,6 +263,7 @@
 <text transform="matrix(1 0 0 1 209.2404 264.6733)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375"> </text>
 <text transform="matrix(1 0 0 1 218.5188 308.6645)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D05</text>
 <text transform="matrix(1 0 0 1 66.2198 397.2905)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D09</text>
+<text transform="matrix(1 0 0 1 158.2198 332.2905)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D15</text>
 <text transform="matrix(1 0 0 1 241.2336 354.8101)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D06</text>
 <text transform="matrix(1 0 0 1 97.4709 429.5698)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D08</text>
 <text transform="matrix(1 0 0 1 66.2912 351.3091)" fill="#DBD9D6" font-family="'MinionPro-Bold'" font-size="7.6375">D10</text>
