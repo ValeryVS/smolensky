@@ -159,12 +159,18 @@ $image-block--margin: 30px
     display: table
     clear: both
 
-.scroll-hint
+.scroll-hint-cont
   position: fixed
   left: 50%
   bottom: 20px
   width: 28px
+  height: 17px
   margin-left: -14px
+  cursor: pointer
+
+.scroll-hint
+  width: 28px
+  height: 17px
   +animation(scroll-hint 1000ms infinite)
   &:after
     content: ' '
@@ -173,9 +179,6 @@ $image-block--margin: 30px
     height: 17px
     background: url(images/arrow_select.svg) 0 0 no-repeat
     background-size: 28px auto
-  &:not(.skrollable),
-  &.skrollable-after
-    display: none
 
 +keyframes(scroll-hint)
   0%

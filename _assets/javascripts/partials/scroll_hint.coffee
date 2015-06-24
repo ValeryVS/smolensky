@@ -1,5 +1,15 @@
-if $(role('screen')).hasClass('screen') # if page = mainPage
-  $('body').append('<div class="scroll-hint" role="scroll-hint" />')
+if $(role('screen')).length > 0
+  $('body').append('<div role="scroll-hint" class="scroll-hint-cont"><div class="scroll-hint" /></div>')
+  $(role('scroll-hint')).click ->
+    windowHeight = $(window).height()
+    if typeof s isnt 'undefined'
+      s.animateTo windowHeight
+    else
+      $("html,body").animate
+        scrollTop: windowHeight
+      , 1000
+      false
+    return
 
 @setScrollHintVisibility = ->
   if $(window).height() >= $(document).height() or $('body').hasClass '404_no_arrow'
